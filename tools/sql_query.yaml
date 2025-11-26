@@ -2,11 +2,11 @@ identity:
   name: sql_query
   author: colley
   label:
-    en_US: SQL Query
-    zh_Hans: SQL查询
+    en_US: Database SQL Query
+    zh_Hans: 数据库SQL查询
 description:
   human:
-    en_US: Database SQL query
+    en_US: Database SQL Query
     zh_Hans: 数据库SQL查询
   llm: A Dify plugin tool to operate database query.
 parameters:
@@ -14,8 +14,8 @@ parameters:
     type: string
     required: true
     label:
-      en_US: SQL Query
-      zh_Hans: SQL查询
+      en_US: Query SQL
+      zh_Hans: 查询SQL
     human_description:
       en_US: The SQL query to execute (allow literal arg as parameters)
       zh_Hans: 要执行的SQL查询（参数使用Jinja 渲染表示，或使用字面值）

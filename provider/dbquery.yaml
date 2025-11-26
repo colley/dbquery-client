@@ -2,11 +2,11 @@ identity:
   author: colley
   name: database_query_client
   label:
-    en_US: Database Client
-    zh_Hans: 数据库查询
+    en_US: Database Query Client
+    zh_Hans: 数据库数据查询
   description:
-    en_US: Provide workflow nodes with the ability to read and write databases.
-    zh_Hans: 在工作流中提供读写数据库能力的节点。
+    en_US: Provide workflow nodes with the ability to read databases.
+    zh_Hans: 在工作流中提供读数据库能力的节点。
   icon: icon.svg
   tags:
     - utilities
