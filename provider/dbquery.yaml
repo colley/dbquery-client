@@ -1,0 +1,76 @@
+identity:
+  author: colley
+  name: database_query_client
+  label:
+    en_US: Database Client
+    zh_Hans: 数据库查询
+  description:
+    en_US: Provide workflow nodes with the ability to read and write databases.
+    zh_Hans: 在工作流中提供读写数据库能力的节点。
+  icon: icon.svg
+  tags:
+    - utilities
+tools:
+  - tools/sql_query.yaml
+credentials_for_provider:
+  db_type:
+    type: select
+    required: true
+    options:
+      - value: mysql
+        label:
+          en_US: MySQL
+          zh_Hans: MySQL
+      - value: clickhouse
+        label:
+          en_US: Clickhouse
+          zh_Hans: Clickhouse
+    default: mysql
+    label:
+      en_US: Database type
+      zh_Hans: 数据库类型
+    help:
+      en_US: Used for selecting the database type, mysql, clickhouse.
+      zh_Hans: 用于选择数据库类型，mysql, clickhouse。
+  db_host:
+    type: text-input
+    required: true
+    default: "localhost"
+    label:
+      en_US: "Host address of the database"
+      zh_Hans: "数据库的主机地址"
+  db_port:
+    type: text-input
+    required: true
+    default: "8123"
+    label:
+      en_US: "Port number of the database"
+      zh_Hans: "数据库的端口号"
+  db_name:
+    type: text-input
+    required: true
+    label:
+      en_US: "Name of the database"
+      zh_Hans: "数据库的名称"
+  db_user:
+    type: text-input
+    required: true
+    label:
+      en_US: "Username for database access"
+      zh_Hans: "数据库访问的用户名"
+  db_password:
+    type: secret-input
+    required: true
+    label:
+      en_US: "Password for database access"
+      zh_Hans: "数据库访问的密码"
+  max_fetched_rows:
+    type: text-input
+    required: false
+    default: "100"
+    label:
+      en_US: "Max fetched rows"
+      zh_Hans: "最大读取行数"
+extra:
+  python:
+    source: provider/dbquery.py
