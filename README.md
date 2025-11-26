@@ -2,27 +2,26 @@
 
 <p>
 <a href="https://github.com/colley/dbquery-client"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/colley/dbquery-client?style=social"/></a>
-<a href="https://marketplace.dify.ai/plugins/colley/dbquery-client"><img alt="Dify Marketplace" src="https://img.shields.io/badge/Dify%20Marketplace-dbquery-client-blue"/></a>
+<a href="https://marketplace.dify.ai/plugins/colley/dbquery-client"><img alt="Dify Marketplace" src="https://img.shields.io/badge/Dify%20Marketplace-dbquery-client"/></a>
 </p>
 
 [简体中文](./README_CN.md) | **English**  
 
-[DB-Query-Client](https://github.com/spance/db-client-node) is a plugin tool designed for Dify workflows, providing database operation nodes. It currently supports Mysql、Clickhouse databases.
+[DB-Query-Client](https://github.com/colley/dbquery-client) is a plugin tool designed for Dify workflows, providing database operation nodes. It currently supports Mysql、Clickhouse databases.
 
-![DB-Query-Client demo](https://f001.backblazeb2.com/file/static/dbcn-demo_en.png)
+![DB-Query-Client demo](imags/dbcn-demo_en.png)
 
 ## Features
 - Securely manages database connection information through Dify’s `credentials_for_provider` mechanism.
 - Supports parameterized execution of DML statements such as `SELECT` not  supports `INSERT` or `DELETE`.
 - Provides dynamic SQL generation with conditional logic support.
-- Implements performance-optimized batch data insertion.
 
 ## Installation
 To use `DB-Query-Client` in a Dify workflow:
 1. Install the plugin via the Dify plugin [marketplace](https://marketplace.dify.ai/plugins/colley/dbquery-client) or manually download version from the [release page](https://github.com/colley/dbquery-client/releases).
 2. Configure Mysql/Clickhouse credentials in Dify’s `Plugins -> Authorization` settings.
 
-![DB-Query-Client credential demo](https://f001.backblazeb2.com/file/static/dbcn-auth-demo.png)
+![DB-Query-Client credential demo](imags/dbcn-auth-demo.png)
 
 ## Node Output
 ### Query Execution

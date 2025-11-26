@@ -2,7 +2,7 @@
 
 <p>
 <a href="https://github.com/colley/dbquery-client"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/colley/dbquery-client?style=social"/></a>
-<a href="https://marketplace.dify.ai/plugins/colley/dbquery-client"><img alt="Dify Marketplace" src="https://img.shields.io/badge/Dify%20Marketplace-dbquery-client-blue"/></a>
+<a href="https://marketplace.dify.ai/plugins/colley/dbquery-client"><img alt="Dify Marketplace" src="https://img.shields.io/badge/Dify%20Marketplace-dbquery-client"/></a>
 </p>
 
 
@@ -10,20 +10,20 @@
 
 [DB-Query-Client](https://github.com/colley/dbquery-client) 是为 Dify 工作流设计的插件工具，提供数据库操作节点。目前支持 Mysql、Clickhouse 数据库。
 
-![DB-Query-Client demo](https://f001.backblazeb2.com/file/static/dbcn-demo.png)
+![DB-Query-Client demo](imags/dbcn-demo_en.png)
 
 ## 特性
 - 通过 Dify 的 `credentials_for_provider` 机制安全管理数据库连接信息。
 - 支持参数化执行 `SELECT` 不支持`INSERT`、`DELETE`等DML语句。
 - 提供动态 SQL 生成及条件逻辑支持。
-- 实现性能优化的批量数据插入功能。
 
 
 ## 安装
 要在 Dify 工作流中使用 `DB-Query-Client`：
-1. 通过 Dify [插件市场](https://marketplace.dify.ai/plugins/colley/dbquery-client) 安装插件，或从 [发布页面](https://github.com/spance/db-client-node/releases) 手动下载版本。
+1. 通过 Dify [插件市场](https://marketplace.dify.ai/plugins/colley/dbquery-client) 安装插件，或从 [发布页面](https://github.com/colley/dbquery-client/releases) 手动下载版本。
 2. 在 Dify 的 `插件 -> 授权` 设置中配置 Mysql、Clickhouse 凭据。
 
+![DB-Query-Client credential demo](imags/dbcn-auth-demo.png)
 
 ## 节点输出
 
